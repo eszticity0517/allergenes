@@ -4,10 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AllergenesComponent } from './allergenes/allergenes.component';
+import { AllergeneComponent } from './allergene/allergene.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AllergenesComponent,
+    AllergeneComponent
   ],
   imports: [
     BrowserModule,
@@ -15,6 +19,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, AllergenesComponent]
 })
 export class AppModule { }
